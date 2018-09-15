@@ -1,4 +1,14 @@
 module.exports = {
+  configureWebpack: {
+    resolve: {
+      alias: {
+        'assets': resolve('assets'),
+        'components': resolve('components'),
+        'utils': resolve('utils'),
+        'views': resolve('views')
+      }
+    },
+  },
   devServer: {
     proxy: {
       '/mock/': {
