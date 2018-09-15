@@ -1,14 +1,4 @@
 module.exports = {
-  configureWebpack: {
-    resolve: {
-      alias: {
-        'assets': resolve('assets'),
-        'components': resolve('components'),
-        'utils': resolve('utils'),
-        'views': resolve('views')
-      }
-    },
-  },
   devServer: {
     proxy: {
       '/mock/': {
@@ -29,10 +19,12 @@ module.exports = {
   },
   css: {
     loaderOptions: {
-      data: `
-        @import "@/styles/var.scss";
-        @import "@/styles/mixins.scss";
-      `
+      sass: {
+        data: `
+          @import "@/styles/var.scss";
+          @import "@/styles/mixins.scss";
+        `
+      }
     }
   }
 }
