@@ -1,4 +1,13 @@
 module.exports = (api, options) => {
+  api.chainWebpack(config => {
+    config.resolve
+      .alias
+        .set('assets', api.resolve('assets'))
+        .set('components', api.resolve('components'))
+        .set('utils', api.resolve('utils'))
+        .set('views', api.resolve('views'))
+  })
+
   api.extendPackage({
     scripts: {
       "serve": "vue-cli-service serve",
