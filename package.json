@@ -1,6 +1,6 @@
 {
-  "name": "@vue/project-mt",
-  "version": "0.0.1",
+  "name": "vue-cli-plugin-project-mt",
+  "version": "0.0.2",
   "description": "vue-cli-plugin project-mt-template",
   "main": "index.js",
   "repository": "https://github.com/L-Chris/vue-cli-plugin-project-mt",
