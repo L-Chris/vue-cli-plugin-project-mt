@@ -1,0 +1,9 @@
+{
+  "name": "@vue/project-mt",
+  "version": "0.0.1",
+  "description": "vue-cli-plugin project-mt-template",
+  "main": "index.js",
+  "repository": "https://github.com/L-Chris/vue-cli-plugin-project-mt",
+  "author": "L-Chris <563303226@qq.com>",
+  "license": "MIT"
+}
